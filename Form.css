@@ -1,0 +1,260 @@
+ @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins:wght@400;700&display=swap'); 
+ :root{
+    --color-bgcolor:linear-gradient(45deg,#4d4242,#f84040,#f72626);
+    --color-newtry: linear-gradient(to bottom,#e9abab,#ff0000, #f78686);
+
+ }
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    font-family: poppins, sans-serif;
+    background: #fff;
+    color: #fff;
+
+
+ }
+ .pop_up img{
+    width: 3%;
+ }
+.for_flex{
+    display: flex;
+}
+ .container{
+   width: 70rem;
+   height: 70vh;
+   margin: 8% auto 0;
+   text-align: center;
+ }
+
+ .details{
+    width: 90rem;
+    height: 50vh;
+    padding-top: 5%;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.details p{
+    color: #000;
+}
+
+
+.text_input{
+width: 90%;
+height: 4rem;
+border-right: 0;
+border-left: 0;
+border-top: 0;
+color: #000;
+border-radius: 5px;
+background: transparent;
+padding: 0 2%;
+font-size: 20px;
+}
+
+.text_area{
+width: 90rem;
+height: 50vh;
+background-color: #fff;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+display: flex;
+flex-direction: column;
+line-height: 1rem;
+padding-right: 1rem;
+padding-top: 6%;
+}
+.input_area{
+    width: 90%;
+    height: 5vh;
+    background: transparent;
+    color:#000;
+    font-size: 15px;
+    /*        
+       
+        margin-left: 5%;
+        border-radius: 5px;
+        padding: 0 2%;
+        
+       */
+}
+.text_area button{
+    width: 90%;
+    border-radius: 5px;
+    height: 5vh;
+    padding: 0 2%;
+    border: none;
+    margin-top: 5%;
+    color: #fff;
+    background:#f84040 ;
+    cursor: pointer;
+}
+
+.text_area button:focus{
+    background: hsl(217, 12%, 63%);
+}
+
+.option_btn{
+    padding: 1% 1% 1%;
+    margin-left: 5%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background:#f84040 ;
+}
+.text_area button:focus{
+    background: hsl(217, 12%, 63%);
+}
+
+.option_btn:hover{
+    background-color: #fff;
+    color:#f84040 ;
+}
+
+.pop_up{
+    display: none;
+}
+
+ 
+ @media (max-width:425px) {
+
+    .for_flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .pop_up{
+        display: none;
+    }
+
+  
+    .container{
+        width: 95%;
+        height: 90vh;
+        margin: 10% auto 0;
+        padding:15px;
+        text-align: center;
+
+
+        
+    }
+    
+    .details{
+        width: 109%;
+        height: 40vh;
+        padding-top: 15%;
+        margin: 0 -4% 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        background: #fff;
+        padding-left: 0%;
+    }
+    .details img{
+        width: 12%;
+
+    }
+    .first_search p{
+        font-size: 5px;
+    }
+    .details u{
+        padding-left: 75%;
+    }
+    .text_input{
+        width: 90%;
+        height: 15%;
+        border-radius: 5px;
+        padding: 0 2%;
+        border-right: 0;
+        border-left: 0;
+        border-top: 0;
+        background: transparent;
+        color: black;
+
+    }
+
+    .text_area{
+        width: 109%;
+        height: 30vh;
+        margin: 0 -4% 0;
+        padding-top: 10%;
+        border-width: thick;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        line-height: 10%;
+        text-align: center;
+        background-color: #fff;
+    }
+    .input_area{
+        width: 90%;
+        height: 20%;
+        margin-left: 5%;
+        border-radius: 5px;
+        padding: 0 2%;
+        background: transparent;
+        color: #000;
+    }
+  
+
+    .text_area button{
+        width: 90%;
+        margin-left: 0%;
+        border-radius: 5px;
+        height: 5vh;
+        padding: 0 2%;
+        border: none;
+        margin-top: 5%;
+        color: #fff;
+        background:#f84040 ;
+    }
+    .text_area button:hover{
+        background-color: #fff;
+        color:#f84040 ;
+    }
+    .text_area button:focus{
+        background: hsl(217, 12%, 63%);
+    }
+    
+    .option_btn{
+        padding: 1% 1% 1%;
+        margin-left: 5%;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        background:#f84040 ;
+    }
+    .option_btn:focus{
+        background: hsl(217, 12%, 63%);
+        color: white;
+    }
+    .option_btn:hover{
+        background-color: #fff;
+        color:#f84040 ;
+    }
+    .text_area u{
+        padding-right: 70%;
+    }
+ }
+#anchor{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 1440px){
+    .input_area {
+        padding: 20px;
+        border-radius: 3px;
+        box-shadow: 3px 1px 3px grey;
+    }
+    #select1{
+        padding: 5px;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Form.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="pop_up">
+        <img src="thumbs-up-png-32224.png" alt="" width="">
+        <p>Please wait for approval</p>
+    </div>
+
+        <form action="">
+            <div class="for_flex">
+            <div class="details">
+                <p></p>
+            <input type="text" placeholder="Fullname" class="text_input"><br><br>
+            <input type="text" placeholder="Country" class="text_input"><br><br>
+            <input type="number" placeholder="Age" class="text_input"><br><br>
+
+            <p>I have a laptop? Yes <input type="radio" name="option"> No <input type="radio" name="option"></p>
+
+            
+        </div>
+            <!--
+            <label for="">i have a laptop</label>
+            <label for="">Yes</label><input type="radio" name="attest">
+            <label for="">No</label><input type="radio"  name="attest">
+            -->
+            <div class="text_area hide">
+                <select onclick="myFunc();" class="input_area" id="select1">
+                    <option value="" selected>--Select Course--</option>
+                    <option value="UIUX">UI/UX Design</option>
+                    <option value="Editing">Video Editing</option>
+                    <option value="Cyber">Cyber Security</option>
+                    <option value="Prog">Programming</option>
+                    <option value="Data">Data Analytical</option>
+                </select>
+                <br><br><br>
+            <textarea name="" id="" cols="30" rows="2" placeholder="Why do you want to learn from us" class="input_area"></textarea>
+            <br><br><br>
+            <textarea name="" id="" cols="30" rows="2" placeholder="Referral"  class="input_area"></textarea>
+            <br><br><br>
+            <p id="para"></p>
+            <a href="" id="anchor"><button type="button" id="btn" onclick="myFunc()">Next</button></a>
+        </div>
+        </div>
+        </form>
+        <div class="socials">
+            <nav>
+                <img src="" alt="">
+            </nav>
+        </div>
+    </div>
+
+    
+<script>
+
+    var selectElement = document.querySelector('#select1');
+    let btn = document.getElementById('anchor');
+    const p = document.getElementById('para');
+    
+    function myFunc(){
+     btn.href = selectElement.value+'.html';
+
+    }
+
+    
+</script>
+</body>
+</html>
