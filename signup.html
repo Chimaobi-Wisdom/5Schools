@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The5School</title>
+        <link href="style.css" rel="stylesheet"/>
+        <link href="responsivity.css" rel="stylesheet" type="text/css"/>
+    
+    </head>
+    <body>
+        <header>
+            <p class="logo"></p>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="#"><li>Courses</li></a>
+                <a href="#"><li>Scholarship</li></a>
+                <a href="#"><li>Internship</li></a>
+                <a href="loginpage.html" class="active"><li>Signup/Login</li></a>
+                <a href="#"><li>About Us</li></a>
+            </ul>
+            
+        </header>
+        
+        <main>
+        
+        
+        <form id="signup_form" method="post">
+
+            <section class="signup_inputs">
+
+                <input type="text" class="inputs2" name="name" placeholder="Full Name" required/>
+                <input type="email" class="inputs2" name="email" placeholder="Email"required/>
+                <input type="date" class="inputs2" name="date" placeholder="Age" required/>
+                <select name="select2" class="inputs2" id="select2" required>
+                    <option value="#">Nationality</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="rwanda">Rwanda</option>
+                    <option value="ghana">Ghana</option>
+                    <option value="cameroun">Cameroun</option>
+                    <option value="benin">Benin Republic</option>
+                    <option value="senegal">Senegal</option>
+                    <option value="gambia">The Gambia</option>
+                    <option value="sierra">Sierra Leone</option>
+                    <option value="liberia">Liberia</option>
+                </select>
+                <input type="number" class="inputs2" name="number" placeholder="Enter Phone Number" minlength="7" required/>
+                <input type="password" class="inputs2" name="password" placeholder="Enter Password" minlength="7" required/>
+                <input type="password" class="inputs2" name="password2" placeholder="Confirm Password" minlength="7" required/>
+            </section>
+            <input type="reset" value="Cancel" id="cancel" class="signup_btns"/>
+            <a href="verification.html"><input type="submit" value="Submit" id="submit" class="signup_btns"/></a>
+            </form>
+        </section>
+    </main>
+    </body>
+</html>

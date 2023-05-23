@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Pop Up </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link href="style.css" rel="stylesheet"/>
+    <style>
+      body{
+            background-color: lightcoral;
+      }
+      #ad_box{
+          height: 30vh;
+          width: 30vw;
+          background-color: red;
+          display: none;
+          transition:.5s;
+      }
+      #close, a{
+          font-size:xx-large;
+          position: absolute;
+          top: 5vh;
+          right: 3vw;
+          color: black;
+          display: none;
+      }
+      a:hover{
+        font-size: xxx-large;
+        transition: .5s;
+      }
+      .ad_text{
+        cursor: pointer;
+      }
+    </style>
+</head>
+
+<body>
+
+    <div class="ad_box">
+      <div class="ad_content" id="ad_content">
+        <span class="ad_text" id="ad_text">Click here to open link</span>
+        <div id="ad_box" id="ad_box">
+
+        </div>
+        <a href="#"><p id="close"><b>X</b></p></a>
+      </div>
+    </div>
+  
+
+  <script type="text/javascript">
+
+    var content = document.getElementById("ad_content");
+    var text = document.getElementById("ad_text");
+    var box = document.getElementById("ad_box");
+    var close = document.getElementById("close");
+
+    
+
+    function popAd(){
+      box.style.display = "block";
+      close.style.display = "block";
+
+    };
+
+    text.addEventListener('click', popAd);
+
+  </script>
+
+</body>
+
+</html>

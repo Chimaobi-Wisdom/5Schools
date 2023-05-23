@@ -1,0 +1,62 @@
+
+/*For wider screen*/
+@media screen and (max-width:1440px) {
+    .logo{
+        height: 13%;
+        width: 10%;
+        margin-top: 5px;
+    }
+    ul a li{
+        padding-right: 20px;
+        font-size: x-large;
+    }
+    ul a li:hover{
+        padding-right: 22px;
+    }
+    .dark_ones{
+        margin-right: 15%;
+        font-size: 45px;
+    }
+    .red_ones{
+        margin-right: 13%;
+    }
+    #global_instr{
+        margin-right: 9%;
+    }
+    .img_goal{
+        height: 30vh;
+    }
+    .goal{
+        height: 52vh;
+    }
+    .large_btns{
+        height: 70px;
+    }
+    .large_btns:hover{
+        height: 72px;
+        width: 21%;
+    }
+    .top_paying{
+        background-size:calc(100vw);
+        background-position-y: calc(110vh);
+    }
+    #confirm_next{
+        height: 7vh;
+    }
+    .line_sec{
+        height: 60vh;
+    }
+};
+
+/*For Normal Laptop view*/
+@media screen and (max-width: 1024px){
+    #global_instr{
+        margin-right: 11%;
+    }
+    .img_goal{
+        width: 18%;
+    }
+    .logo{
+        width: 15%;
+    }
+}
